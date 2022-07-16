@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-header">
+            <button class="button-home" onclick="window.location.href='#section1'">Home</button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#section2">About</a></li>
+                <li class="nav-item"><a href="#section3">Portofolios</a></li>
+                <li class="nav-item"><a href="#section4">Blog</a></li>
+                <li class="nav-item"><a href="#section5">Team</a></li>
+                <li class="nav-item"><a href="#section6">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg">
+            <div class="bgshape-1"></div>
+            <div class="bgshape-2"></div>
+        </div>
+        <section id="section1">
+            <div class="home-text">
+                <h1>
+                    Perfect Website for Every
+                    <div class="animate-text">
+                        <span>Personal</span>
+                        <span>Startup</span>
+                        <span>Agency</span>
+                        <span>Designer</span>
+                        <span>Company</span>
+                    </div>
+                </h1>
+            </div>
+            <p>
+                We provides you with user management functionality that results in faster development and revenue.
+            </p>
+        </section>
+
+        <section id="section2">
+            <img src="images/akrim1.png" alt="foto-akrim">
+            <div class="about-me">
+                <h4>Hi, i am</h4>
+                <h2>MOH AKRIM</h2>
+                <h4>Front End Developer</h4>
+                <p>I am comitted to writing clean, scalable and re-usable code, crafting clean and functional user
+                    interfaces and web applications using, <strong>Javascript, Typescript, React.js, Next.js, Redux,
+                        CSS/SCSS,</strong> and Other CSS frameworks
+                </p>
+            </div>
+        </section>
+
+        <section id="section3">
+            <h2>My Recent Work</h2>
+            <p>Here are a few website projects I've worked on recently</p>
+            <div class="portos">
+                <div id="porto">
+                    <img class="img-porto" src="images/porto1.webp" alt="gambar-portofolio-ke-1">
+                    <p class="desc-porto">My first project, using vanilla js and native CSS</p>
+                </div>
+                <div id="porto">
+                    <img class="img-porto" src="images/porto2.webp" alt="gambar-portofolio-ke-2">
+                    <p class="desc-porto">with a unique design, I created this website using React JS</p>
+                </div>
+                <div id="porto">
+                    <img class="img-porto" src="images/porto3.webp" alt="gambar-portofolio-ke-3">
+                    <p class="desc-porto">I can create multiple landing pages and slicing some UI designs</p>
+                </div>
+                <div id="porto">
+                    <img class="img-porto" src="images/porto4.webp" alt="gambar-portofolio-ke-4">
+                    <p class="desc-porto">I created a design studio that includes backend tasks to manage databases
+                    </p>
+                </div>
+                <div id="porto">
+                    <img class="img-porto" src="images/porto5.webp" alt="gambar-portofolio-ke-5">
+                    <p class="desc-porto">By making some voice and other audio inputs, I can learn different things</p>
+                </div>
+                <div id="porto">
+                    <img class="img-porto" src="images/porto6.webp" alt="gambar-portofolio-ke-6">
+                    <p class="desc-porto">here I use typescript for the first time</p>
+                </div>
+            </div>
+            <button class="porto-button">See More</button>
+        </section>
+
+        <section id="section4">
+            <h2>Blog</h2>
+            <p>Some information you need to know as a web developer</p>
+            <div class="cards">
+                <div>
+                    <img src="images/blog1.jpg" alt="blog-1">
+                    <span class="desc">
+                        The Best Chrome Extensions for Web Developers, there’s sure to be something here you could use!
+                        <a href="#">Read more</a>
+                    </span>
+                </div>
+                <div>
+                    <img src="images/blog2.jpg" alt="blog-2">
+                    <span class="desc">
+                        A good way to use CSS variables is when it comes to the colors of your design.
+                        <a href="#">Read more</a>
+                    </span>
+                </div>
+                <div>
+                    <img src="images/blog3.jpg" alt="blog-3">
+                    <span class="desc">
+                        There are six criteria that should be applied when evaluating any Website.
+                        <a href="#">Read more</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <h2>Team</h2>
+            <p>I'm proud to have collaborated with my teammate</p>
+            <div class="teams">
+                <div>
+                    <img src="images/rudi.webp" alt="foto-rudi">
+                    <h4>Rudi Razak</h4>
+                    <p>Manager</p>
+                </div>
+                <div>
+                    <img src="images/admiral.webp" alt="foto-admiral">
+                    <h4>Admiral</h4>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div>
+                    <img src="images/akrim.webp" alt="foto-akrim">
+                    <h4>Moh Akrim</h4>
+                    <p>Frontend Developer</p>
+                </div>
+                <div>
+                    <img src="images/ansar.webp" alt="foto-ansar">
+                    <h4>Ansar</h4>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section6">
+            <h2>Want to discuss?</h2>
+            <p>I’m always open to discussing product website work or partnership opportunities.</p>
+            <form action="index.html" onSubmit="return confirm('Do you want to send this message?')">
+                <fieldset>
+                    <legend>Get In Touch</legend>
+                    <input type="text" id="fname" name="fname" minlength="3" maxlength="20" placeholder="Name"
+                        required><br>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        placeholder="Email" required><br>
+                    <textarea id="suggestion" name="suggestion" rows="5" cols="33" placeholder="Additional details"
+                        required></textarea>
+                    <br>
+                    <input type="submit" value="Send" id="submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Moh Akrim</p>
+        <div class="social-media">
+            <img src="images/instagram-light.svg" alt="instagram" class="social">
+            <img src="images/facebook-light.svg" alt="facebook" class="social">
+            <img src="images/whatsapp-light.svg" alt="whatsapp" class="social">
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
